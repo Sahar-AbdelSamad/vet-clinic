@@ -1,31 +1,43 @@
-# curriculum-databases-projects-template
+# Vet Clinic
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+> This is a data structure for a vet clinic, created using a relational database. It is a complete database with data about: animals, animals' owners, clinic employees, and visits.
 
 
 ## Getting Started
 
-This repository includes files with plain SQL that can be used to recreate a database:
+### Requirements
+- PostgreSQL server installed and running
+- psql installed
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+### Clone this repository
 
+```bash
+$ git clone git@github.com:Sahar-AbdelSamad/vet-clinic.git
+$ cd vet-clinic
+```
+1. Connect to your PostgreSQL server with `psql`
+```bash
+psql
+```
+2. Create the database `vet_clinic`
+```bash
+CREATE DATABASE vet_clinic;
+```
+3. Connect to your database `vet_clinic`
+```bash
+\c vet_clinic
+```
+4. Use [schema.sql](./schema.sql) to create all tables
+5. Use [data.sql](./data.sql) to populate tables with sample data
+6. Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 ## Authors
 
-👤 **Author1**
+👤 **Sahar Abdel Samad**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@sahar-abdelsamad](https://github.com/Sahar-AbdelSamad)
+- Twitter: [@abdelsamadsahar](https://twitter.com/AbdelSamadSahar)
+- LinkedIn: [abdel-samad-sahar](https://www.linkedin.com/in/sahar-abdel-samad/)
 
 ## 🤝 Contributing
 
@@ -36,13 +48,3 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
