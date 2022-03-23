@@ -49,3 +49,9 @@ INSERT INTO owners
 
 INSERT INTO owners
     VALUES (DEFAULT, 'Jodie Whittaker', 38);
+
+INSERT INTO species
+    VALUES (DEFAULT, 'Pokemon');
+
+INSERT INTO species
+    VALUES (DEFAULT, 'Digimon');
